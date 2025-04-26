@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import HeroScene from './3d/HeroScene';
@@ -9,7 +8,7 @@ import HeroButtons from './hero/HeroButtons';
 
 const HeroSection = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const textArray = ["Data Scientist", "ML Engineer", "AI Specialist", "Analytics Expert"];
+  const textArray = ["AI/ML Developer", "Data Enthusiast", "Tech Explorer", "CSE Undergrad"];
 
   useEffect(() => {
     setIsDarkMode(document.documentElement.classList.contains('dark'));
@@ -48,7 +47,7 @@ const HeroSection = () => {
             }}
             transition={{ duration: 3, repeat: Infinity }}
           >
-            Hello, I'm <span className="gradient-text">Alex Chen</span>
+            Hello, I'm <span className="gradient-text">Rishu Jaiswal</span>
           </motion.h1>
           
           <div className="h-12 md:h-16">
@@ -64,8 +63,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Transforming complex data into actionable insights and building intelligent 
-            systems that solve real-world problems with cutting-edge AI and ML technologies.
+            Passionate about building intelligent solutions using AI and ML — from emotion-aware music recommendation to mental health detection and fraud analytics.
           </motion.p>
         </motion.div>
 

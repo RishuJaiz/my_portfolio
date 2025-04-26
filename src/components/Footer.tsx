@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Twitter, ArrowUp } from "lucide-react";
 
@@ -17,46 +16,46 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <div className="text-xl font-bold font-display text-foreground flex items-center gap-2">
               <span className="text-2xl text-purple">{"<"}</span>
-              <span className="gradient-text">Portfolio</span>
+              <span className="gradient-text">Rishu's</span>
               <span className="text-2xl text-neon-pink">{"/>"}</span>
             </div>
             <p className="mt-2 text-muted-foreground text-sm max-w-md">
-              A creative developer passionate about building beautiful and functional web experiences.
+              A B.Tech CSE student and AI/ML enthusiast building intelligent systems with real-world impact — from emotion-aware music to mental health detection.
             </p>
           </div>
-          
+
           <div className="flex items-center space-x-4">
-            <a 
-              href="https://github.com" 
-              target="_blank" 
+            <a
+              href="https://github.com/your-github-username"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-purple transition-colors"
               aria-label="GitHub"
             >
               <Github size={20} />
             </a>
-            <a 
-              href="https://linkedin.com" 
-              target="_blank" 
+            <a
+              href="https://linkedin.com/in/your-linkedin-id"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-purple transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
             </a>
-            <a 
-              href="https://twitter.com" 
-              target="_blank" 
+            <a
+              href="https://twitter.com/your-twitter-handle"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-purple transition-colors"
               aria-label="Twitter"
             >
               <Twitter size={20} />
             </a>
-            
-            <Button 
-              variant="outline" 
-              size="icon" 
+
+            <Button
+              variant="outline"
+              size="icon"
               className="ml-2"
               onClick={scrollToTop}
               aria-label="Scroll to top"
@@ -65,10 +64,9 @@ const Footer = () => {
             </Button>
           </div>
         </div>
-        
+
         <div className="border-t border-border mt-6 pt-6 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
-          <p className="mt-1">Made with <span className="text-neon-pink">♥</span> and React</p>
+          <p>© {new Date().getFullYear()} Rishu Jaiswal. All rights reserved.</p>
         </div>
       </div>
     </footer>

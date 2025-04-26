@@ -44,7 +44,7 @@ const Navbar = ({ toggleTheme, isDarkMode }: NavbarProps) => {
             className="text-xl font-bold font-display text-foreground flex items-center gap-2"
           >
             <span className="text-2xl text-purple">{"<"}</span>
-            <span className="gradient-text">Portfolio</span>
+            <span className="gradient-text">Rishu's</span>
             <span className="text-2xl text-neon-pink">{"/>"}</span>
           </a>
         </div>

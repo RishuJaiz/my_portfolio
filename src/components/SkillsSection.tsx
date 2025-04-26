@@ -12,24 +12,25 @@ const SkillsSection = () => {
 
   const skills = {
     "Machine Learning & AI": [
-      { name: "TensorFlow", level: 90, color: "#FF6F00", icon: <Brain className="h-5 w-5" />, desc: "Developing neural networks and deep learning models" },
-      { name: "PyTorch", level: 85, color: "#EE4C2C", icon: <Brain className="h-5 w-5" />, desc: "Building computer vision and NLP applications" },
-      { name: "Scikit-Learn", level: 95, color: "#F7931E", icon: <Brain className="h-5 w-5" />, desc: "Implementing classical machine learning algorithms" },
-      { name: "NLP", level: 80, color: "#42A5F5", icon: <Brain className="h-5 w-5" />, desc: "Natural language processing and text analysis" },
+      { name: "Scikit-Learn", level: 95, color: "#F7931E", icon: <Brain className="h-5 w-5" />, desc: "Applied ML models for sentiment analysis and fraud detection" },
+      { name: "NLP", level: 88, color: "#42A5F5", icon: <Brain className="h-5 w-5" />, desc: "Worked on emotion-aware music recommendation and mental health detection" },
+      { name: "Transformers (BERT)", level: 85, color: "#FF6F00", icon: <Brain className="h-5 w-5" />, desc: "Used in detecting depression severity in social media text" },
+      { name: "PyTorch", level: 80, color: "#EE4C2C", icon: <Brain className="h-5 w-5" />, desc: "Implemented deep learning models for classification tasks" },
     ],
-    "Data Engineering & Analysis": [
-      { name: "Python", level: 95, color: "#3776AB", icon: <Code className="h-5 w-5" />, desc: "Primary programming language for data analysis" },
-      { name: "SQL & NoSQL", level: 90, color: "#336791", icon: <Database className="h-5 w-5" />, desc: "Database management and query optimization" },
-      { name: "Pandas", level: 93, color: "#150458", icon: <TrendingUp className="h-5 w-5" />, desc: "Data manipulation and analysis" },
-      { name: "Apache Spark", level: 85, color: "#E25A1C", icon: <Database className="h-5 w-5" />, desc: "Large-scale data processing" },
+    "Big Data & Engineering": [
+      { name: "PySpark", level: 90, color: "#E25A1C", icon: <Database className="h-5 w-5" />, desc: "Used for credit card fraud detection and data pipelines" },
+      { name: "Apache Kafka", level: 85, color: "#231F20", icon: <Database className="h-5 w-5" />, desc: "Stream processing and integration in big data projects" },
+      { name: "Cassandra", level: 80, color: "#1287B1", icon: <Database className="h-5 w-5" />, desc: "NoSQL database used in real-time fraud detection system" },
+      { name: "SQL", level: 90, color: "#336791", icon: <Database className="h-5 w-5" />, desc: "Relational data handling and query optimization" },
     ],
     "Visualization & Tools": [
-      { name: "Matplotlib", level: 88, color: "#11557C", icon: <ChartPie className="h-5 w-5" />, desc: "Creating static, interactive, and animated visualizations" },
-      { name: "Tableau", level: 82, color: "#E97627", icon: <BarChart className="h-5 w-5" />, desc: "Business intelligence and data visualization" },
-      { name: "Power BI", level: 85, color: "#F2C811", icon: <BarChart className="h-5 w-5" />, desc: "Interactive data visualization dashboards" },
-      { name: "Statistical Analysis", level: 90, color: "#20C997", icon: <Activity className="h-5 w-5" />, desc: "Hypothesis testing and statistical modeling" },
+      { name: "Microsoft Excel", level: 95, color: "#217346", icon: <BarChart className="h-5 w-5" />, desc: "Expert in formulas, pivot tables, and data visualization" },
+      { name: "Matplotlib & Seaborn", level: 85, color: "#11557C", icon: <ChartPie className="h-5 w-5" />, desc: "Statistical plotting and visual storytelling" },
+      { name: "Power BI", level: 80, color: "#F2C811", icon: <BarChart className="h-5 w-5" />, desc: "Interactive dashboards and data-driven insights" },
+      { name: "Statistical Analysis", level: 90, color: "#20C997", icon: <Activity className="h-5 w-5" />, desc: "Used in academic research and social media sentiment evaluation" },
     ],
   };
+  
 
   useEffect(() => {
     if (isInView) {

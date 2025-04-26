@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -9,19 +8,19 @@ const AboutSection = () => {
   const funFacts = [
     { 
       icon: <Database className="h-6 w-6 text-neon-orange" />, 
-      text: "Processed over 10TB of data in my largest project" 
+      text: "Built a big data pipeline using PySpark, Kafka, and Cassandra" 
     },
     { 
       icon: <BarChart className="h-6 w-6 text-neon-orange" />, 
-      text: "Created dashboards viewed by 50K+ users monthly" 
+      text: "Created sentiment analysis tools using social media data" 
     },
     { 
       icon: <Brain className="h-6 w-6 text-neon-pink" />, 
-      text: "Developed NLP models with 94% accuracy" 
+      text: "Developed transformer-based NLP models for mental health insights" 
     },
     { 
       icon: <Lightbulb className="h-6 w-6 text-neon-pink" />, 
-      text: "Published 5 papers on ML applications" 
+      text: "Won 3rd place at AI Arena Hackathon for an emotion-aware music system" 
     },
   ];
 
@@ -74,7 +73,7 @@ const AboutSection = () => {
       <div className="container relative z-10">
         <SectionHeader 
           title="About Me"
-          subtitle="My journey in data science and AI"
+          subtitle="My journey through AI, ML, and Big Data"
         />
         
         <motion.div 
@@ -89,26 +88,24 @@ const AboutSection = () => {
             variants={itemVariants}
           >
             <h3 className="text-2xl font-bold">
-              I'm a <span className="text-purple">Data Scientist & ML Engineer</span> passionate about transforming data into intelligent solutions.
+              I'm a <span className="text-purple">Data Science & AI Enthusiast</span> with a passion for real-world impact.
             </h3>
             
             <div className="text-muted-foreground space-y-4">
               <p>
-                With over 5 years of experience in AI/ML and data analytics, I specialize in developing 
-                machine learning models and data-driven applications that solve complex business problems. 
-                My expertise spans predictive analytics, natural language processing, computer vision, and 
-                big data technologies.
+                Currently pursuing B.Tech in Computer Science and Engineering, I focus on solving meaningful problems 
+                using machine learning, deep learning, and natural language processing. I’ve built systems that interpret human emotions, detect depression from social media text, and optimize content through data insights.
               </p>
               
               <p>
-                I've collaborated with teams across various industries—from healthcare to finance—to implement 
-                scalable AI solutions that drive meaningful insights and business value. My approach combines 
-                technical expertise with a deep understanding of domain-specific challenges.
+                My hands-on experience ranges from building real-time data pipelines with PySpark and Kafka 
+                to training transformer-based models for mental health analysis. I enjoy integrating academic 
+                research with practical applications to create solutions that matter.
               </p>
               
               <p>
-                When I'm not immersed in data, I enjoy contributing to open-source ML projects, 
-                mentoring aspiring data scientists, and staying updated with the latest research in AI.
+                Outside of coding, I love diving into open-source projects, reading AI research, 
+                and collaborating with peers on impactful tech initiatives. 
               </p>
             </div>
             
@@ -148,7 +145,6 @@ const AboutSection = () => {
                 whileHover={{ rotateY: 10 }}
                 transition={{ duration: 0.8, type: "spring" }}
               >
-                {/* Data visualization patterns overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-purple/10 to-blue/10 mix-blend-overlay"></div>
                 
                 <motion.div 
@@ -168,12 +164,11 @@ const AboutSection = () => {
                 />
                 
                 <img 
-                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Data Scientist Profile" 
+                  src="https://avatars.githubusercontent.com/u/132575289?v=4" 
+                  alt="Rishu Profile" 
                   className="w-full h-full object-cover"
                 />
                 
-                {/* Decorative elements - data nodes and connections */}
                 <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100">
                   <motion.circle cx="20" cy="30" r="1.5" fill="#8B5CF6" 
                     animate={{ opacity: [0.2, 0.8, 0.2] }}
@@ -210,8 +205,8 @@ const AboutSection = () => {
                 <Card className="bg-gradient-to-br from-purple to-neon-pink text-white">
                   <CardContent className="p-4">
                     <div className="text-center">
-                      <p className="text-sm font-medium">Experience</p>
-                      <p className="text-2xl font-bold">5+ Years</p>
+                      <p className="text-sm font-medium">Projects</p>
+                      <p className="text-2xl font-bold">10+</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -225,8 +220,8 @@ const AboutSection = () => {
                 <Card className="bg-gradient-to-br from-purple to-neon-pink text-white">
                   <CardContent className="p-4">
                     <div className="text-center flex flex-col items-center">
-                      <p className="text-sm font-medium">AI Models</p>
-                      <p className="text-2xl font-bold">30+</p>
+                      <p className="text-sm font-medium">Hackathons</p>
+                      <p className="text-2xl font-bold">Top 3 Finish</p>
                     </div>
                   </CardContent>
                 </Card>
